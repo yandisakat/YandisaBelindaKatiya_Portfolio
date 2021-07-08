@@ -1,0 +1,375 @@
+/* Base Rules - reset selector*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Leckerli One', cursive;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6c757d;
+
+}
+
+.r-p {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.bg-sec {
+    background: #f8f9fa;
+
+}
+
+.r-btn
+{
+    padding: 5px 20px;
+    background-color:#e6dc4b !important;
+    color: #000 !important; 
+    border-radius: 20px;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 5px;
+}
+
+/* Preloader Section */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 99998;
+}
+.preloader::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #000;
+    transition: 1s;
+}
+
+.preloader::after {
+content: "";
+position: absolute;
+top: 0;
+width: 100%;
+height: 50%;
+background: #000;
+transition: 1s;
+}
+
+.preloader.complete::before {
+    bottom: -50%;
+}
+
+.preloader.complete::after {
+    top: -50%;
+}
+
+.preloader.complete {
+    visibility: hidden;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+    border-top: 10px solid #e6dc4b;
+    animation: animate 1.5s infinite linear;
+    z-index: 99999;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Navigation Section*/
+nav .r-nav {
+    background: transparent;
+    padding: 20px 0;
+    transition: .5s all;
+}
+
+nav .navbar-brand {
+    font-size: 30px;
+    color: #fff;
+}
+
+nav .navbar-nav li a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav .navbar-nav li {
+    margin-left: 15px;
+}
+
+
+nav.r-nav.stickyadd {
+    background: #e6dc4b !important;
+    padding: 15px 0;
+    box-shadow: 0 1px 8px 3px rgba(0,0,0,0.05);
+    transition: .5s all ease-in-out;
+}
+
+nav.stickyadd .navbar-brand {
+    color: #000;
+    font-size: 30px;
+    transition: .5s all;
+}
+
+nav.stickyadd .navbar-nav .nav-link {
+    color: #000 !important;
+}
+
+.navbar .hamburger {
+    color: #fff;
+}
+
+nav.stickyadd .hamburger {
+    color: #000;
+}
+
+.y-logo {
+    margin-right: 30px;
+    width: 80px !important;
+}
+
+.nav-item a:hover {
+    border-color: inherit;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+    transition: .1s all;
+}
+
+/* Header Section */
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.header-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box {
+max-width: 700px;
+color: #fff;
+}
+
+.content-box h4 {
+
+    font-size: 30px;
+}
+
+.content-box h1 {  
+    font-size: 48px;
+}
+
+.content-box a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 5px 25;
+}
+.content-box a:hover {
+    color: #000;
+    background: #fff;
+    transition: 0.5s all;
+}
+
+.content-box p {
+    color: #fff;
+}
+
+/* About Section */
+.about li a{
+    color: #6c757d;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border: 2px solid #6c757d;
+    border-radius: 50%;
+    padding: 3px;
+    transition: 0.5s all;
+    text-align: center;
+}
+
+.about li a:hover {
+    color: #e6dc4b; 
+    border-color: #e6dc4b;
+}
+
+/* Experience Section */
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 2px;
+}
+
+.skill-bar {
+    height: 38px;
+    background: #cacaca;
+    border-radius: 8px;
+}
+
+.skill-percent {
+    height: 38px;
+    background-color: #e6dc4b !important;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+    font-size: 16px;
+    padding: 8px 8px 8px 12px;
+    font-weight: 400;
+    text-align: left;
+    margin: 20px 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.skill-percent::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-percent::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+}
+
+/* Service Section */
+.card, .card-header {
+    background: #f8f9fa !important;
+}
+
+.card-header {
+    border: none !important;
+}
+
+.services-class .card-header i {
+ font-size: 50px;
+}
+
+.service-border {
+    height: 2px;
+    width: 40px;
+    margin: 15px auto;
+    background: #e6dc4b;
+}
+
+/* Testimony Section */
+
+.testimony-class .test-item {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.testimony-class .test-item .test-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.testimony-class .test-item i {
+    color: grey;
+}
+
+.test-item p.test-name {
+    font-size: 11px;
+}
+
+/* Work Section */
+.work .card-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Contact Section */
+.contact .r-icon {
+    font-size: 50px;
+    text-align: center;
+}
+
+.form-control {
+    margin: 5px auto;
+}
+
+/* Footer Section */
+
+footer {
+    height: 200px;
+    background-color: #333333;
+}
+
+footer .r-icon a {
+    color: #d4d4d4;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border: 2px solid #d4d4d4;
+    padding: 3px;
+    border-radius: 50%;
+    transition: 0.5s all;
+    text-align: center;
+}
+
+footer .r-icon a:hover {
+    border: 2px solid #e6dc4b;
+    color: #e6dc4b;
+    transition: .5s all;
+}
