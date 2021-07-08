@@ -359,7 +359,8 @@
                     <button class="btn r-btn" data-filter="4">SEO</button>
                 </div>
             </div>
-            <div class="container">
+            <div class="container"> 
+                <!--Interim Placeholders-->
                 <div class="row filter-container mx-auto">
                     <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1,2">
                         <div>
@@ -453,6 +454,7 @@
                                 </div>
                             </div>
                             <button type="button" id="contact-btn" class="btn r-btn float-end" data-toggle="modal" data-target="#contact-pop-up">Submit</button>
+                            
                             <!--Contact Form Pop-up Modal-->
                             <div class="modal fade" id="contact-pop-up" tabindex="-1" role="dialog" aria-labelledby="contact-title" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
