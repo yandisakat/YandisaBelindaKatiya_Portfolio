@@ -43,6 +43,10 @@ p {
   margin-top: 5px;
 }
 
+.anchor:target {
+  padding-top: 130px;
+}
+
 /* Preloader Section */
 
 .preloader {

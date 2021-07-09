@@ -14,7 +14,7 @@ jQuery(document).ready(function () {
             $(".sticky").removeClass("stickyadd");
         }
     })
-
+ 
     //Typed Header Feature
     var typed = new Typed(".element",{
         strings: ["Yandisa Belinda Katiya","a Developer","a Designer","a Creative"],
